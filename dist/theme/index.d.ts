@@ -1,0 +1,126 @@
+declare const theme: {
+    colors: {
+        'text-title': string;
+        'text-base': string;
+        'text-support': string;
+        placeholder: string;
+        'inputs-icons': string;
+        'shape-tertiary': string;
+        'shape-secondary': string;
+        'shape-primary': string;
+        'color-background': string;
+        'primary-light': string;
+        'primary-mid': string;
+        'primary-dark': string;
+        'primary-low': string;
+        'secondary-light': string;
+        'secondary-mid': string;
+        'secondary-dark': string;
+        'secondary-low': string;
+        'third-light': string;
+        'third-mid': string;
+        'third-dark': string;
+        'third-low': string;
+        'red-light': string;
+        'red-mid': string;
+        'red-dark': string;
+        'red-low': string;
+        'success-light': string;
+        'success-base': string;
+        'success-low': string;
+        'danger-light': string;
+        'danger-base': string;
+        'danger-low': string;
+        'warning-light': string;
+        'warning-base': string;
+        'warning-low': string;
+        'new-light': string;
+        'new-base': string;
+        'new-low': string;
+        white: string;
+        black: string;
+        'grey-100': string;
+        'grey-200': string;
+        'grey-300': string;
+        'grey-400': string;
+        'grey-500': string;
+        'grey-600': string;
+        'grey-700': string;
+        'grey-800': string;
+        'grey-900': string;
+        'grey-950': string;
+    };
+    space: {
+        px: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+        7: string;
+        8: string;
+        10: string;
+        12: string;
+        16: string;
+        20: string;
+        40: string;
+        64: string;
+        80: string;
+    };
+    fontSizes: {
+        xxs: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+        '4xl': string;
+        '5xl': string;
+        '6xl': string;
+        '7xl': string;
+        '8xl': string;
+        '9xl': string;
+    };
+    fonts: {
+        default: string;
+        highlight: string;
+        reading: string;
+        code: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        shorter: string;
+        short: string;
+        base: string;
+        tall: string;
+    };
+    borderWidths: {
+        thin: string;
+        medium: string;
+        thick: string;
+        heavy: string;
+    };
+    radius: {
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        full: string;
+    };
+    opacity: {
+        default: string;
+        semiOpaque: string;
+        intense: string;
+        medium: string;
+        light: string;
+        semiTransparent: string;
+    };
+};
+
+export { theme };

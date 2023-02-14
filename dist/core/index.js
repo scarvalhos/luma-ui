@@ -27,22 +27,14 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Button: () => Button,
+// src/core/index.ts
+var core_exports = {};
+__export(core_exports, {
   Container: () => Container,
   Text: () => Text,
-  Title: () => Title,
-  theme: () => theme
+  Title: () => Title
 });
-module.exports = __toCommonJS(src_exports);
-
-// src/components/Button.tsx
-var import_jsx_runtime = require("react/jsx-runtime");
-var Button = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { children: "Button" });
-};
+module.exports = __toCommonJS(core_exports);
 
 // src/core/Container/Container.tsx
 var import_styled = __toESM(require("@emotion/styled"));
@@ -199,9 +191,7 @@ var Text = import_styled3.default.p`
 `;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button,
   Container,
   Text,
-  Title,
-  theme
+  Title
 });

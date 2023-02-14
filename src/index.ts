@@ -1,1 +1,3 @@
-export * from './components/Button'
+export * from './components'
+export * from './core'
+export * from './theme'

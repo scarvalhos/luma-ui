@@ -1,9 +1,7 @@
 "use strict";
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -17,44 +15,14 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Button: () => Button,
-  Container: () => Container,
-  Text: () => Text,
-  Title: () => Title,
+// src/theme/index.ts
+var theme_exports = {};
+__export(theme_exports, {
   theme: () => theme
 });
-module.exports = __toCommonJS(src_exports);
-
-// src/components/Button.tsx
-var import_jsx_runtime = require("react/jsx-runtime");
-var Button = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { children: "Button" });
-};
-
-// src/core/Container/Container.tsx
-var import_styled = __toESM(require("@emotion/styled"));
-var Container = import_styled.default.div`
-  max-width: 1280px;
-  margin: 0 auto;
-`;
-
-// src/core/Typography/Title.tsx
-var import_styled2 = __toESM(require("@emotion/styled"));
-
-// src/theme/index.ts
+module.exports = __toCommonJS(theme_exports);
 var baseColors = {
   "primary-light": "#996DFF",
   "primary-mid": "#8257E5",
@@ -182,26 +150,7 @@ var theme = {
     semiTransparent: "10%"
   }
 };
-
-// src/core/Typography/Title.tsx
-var Title = import_styled2.default.p`
-  color: ${theme.colors["text-title"]};
-  font-weight: ${theme.fontWeights.medium};
-  font-size: ${theme.fontSizes.lg};
-`;
-
-// src/core/Typography/Text.tsx
-var import_styled3 = __toESM(require("@emotion/styled"));
-var Text = import_styled3.default.p`
-  color: ${theme.colors["text-base"]};
-  font-weight: ${theme.fontWeights.regular};
-  font-size: ${theme.fontSizes.md};
-`;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button,
-  Container,
-  Text,
-  Title,
   theme
 });

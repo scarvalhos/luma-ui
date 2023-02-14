@@ -27,32 +27,13 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Button: () => Button,
-  Container: () => Container,
-  Text: () => Text,
-  Title: () => Title,
-  theme: () => theme
+// src/core/Typography/Text.tsx
+var Text_exports = {};
+__export(Text_exports, {
+  Text: () => Text
 });
-module.exports = __toCommonJS(src_exports);
-
-// src/components/Button.tsx
-var import_jsx_runtime = require("react/jsx-runtime");
-var Button = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { children: "Button" });
-};
-
-// src/core/Container/Container.tsx
+module.exports = __toCommonJS(Text_exports);
 var import_styled = __toESM(require("@emotion/styled"));
-var Container = import_styled.default.div`
-  max-width: 1280px;
-  margin: 0 auto;
-`;
-
-// src/core/Typography/Title.tsx
-var import_styled2 = __toESM(require("@emotion/styled"));
 
 // src/theme/index.ts
 var baseColors = {
@@ -183,25 +164,13 @@ var theme = {
   }
 };
 
-// src/core/Typography/Title.tsx
-var Title = import_styled2.default.p`
-  color: ${theme.colors["text-title"]};
-  font-weight: ${theme.fontWeights.medium};
-  font-size: ${theme.fontSizes.lg};
-`;
-
 // src/core/Typography/Text.tsx
-var import_styled3 = __toESM(require("@emotion/styled"));
-var Text = import_styled3.default.p`
+var Text = import_styled.default.p`
   color: ${theme.colors["text-base"]};
   font-weight: ${theme.fontWeights.regular};
   font-size: ${theme.fontSizes.md};
 `;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button,
-  Container,
-  Text,
-  Title,
-  theme
+  Text
 });
