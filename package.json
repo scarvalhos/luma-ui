@@ -1,19 +1,15 @@
 {
-  "name": "garden",
+  "name": "luma-ui",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
     "packages/*",
     "packages/settings/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "build:web": "turbo run build --filter web",
-    "build:docs": "turbo run build --filter docs",
+    "build:ui": "turbo run build --filter @luma/ui",
     "dev": "turbo run dev --parallel",
-    "dev:web": "turbo run dev --filter web",
-    "dev:docs": "turbo run dev --filter docs",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
@@ -27,6 +23,7 @@
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "^3.2.4",
+    "tsup": "^6.6.3",
     "turbo": "latest"
   },
   "engines": {
